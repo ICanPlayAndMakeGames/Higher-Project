@@ -17,9 +17,7 @@ however if it wasn't it would execute the /* which means all of them
 */
 
 
-app.get("/get",function(req,res){
-          res.json({"success":true,"message":"<h3>It seems like you can't do this<\/h3>\n        <p>This could be because you don't have permission to do this or you entered some details incorrectly.\n        To check your permissions, please ask your admin team to follow\n        <a href='https:\/\/support.arbor-education.com\/hc\/en-us\/articles\/10891079268253-How-can-I-check-a-staff-member-user-s-access-to-different-pages-'>our guidance<\/a>\n         by sending them this URL: <b>\/academic-year\/list-good-cycles-or-weeks\/default-week\/2024-09-05?_dc=1725482192850<\/b><\/p><div class=\"system-modal-id\">ID:76493c28-6afd-11ef-9fda-0ad06f1b5cad<\/div>","logged_in":true})
-})
+
 
 app.get("/", function(req, res) {
           res.sendFile(__dirname + "/client/html/home.html");
